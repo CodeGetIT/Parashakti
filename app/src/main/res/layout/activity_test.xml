@@ -1,0 +1,898 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1EEEE"
+    android:orientation="vertical"
+    tools:context=".activity.TestActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Test"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18sdp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:gravity="center"
+        android:text="Residence Cases"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/_18sdp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_15"
+        android:gravity="center"
+        android:text="Fields in red are mandatory"
+        android:textColor="@color/red"
+        android:textSize="@dimen/_14sdp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_50"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                app:cardBackgroundColor="@color/red">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:background="@drawable/stroke_bg">
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp" />
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_50"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/margin_5"
+                app:cardBackgroundColor="@color/red">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:background="@drawable/stroke_bg">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:text="0" />
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:background="@drawable/stroke_bg">
+
+                <Spinner
+                    android:id="@+id/spLocality"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:background="@drawable/stroke_bg">
+
+                <Spinner
+                    android:id="@+id/spHouse"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_50"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/margin_5"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardBackgroundColor="@color/red">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:background="@drawable/stroke_bg">
+
+                    <Spinner
+                        android:id="@+id/spHouseCondition"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp" />
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_50"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+
+                android:layout_marginTop="@dimen/margin_5"
+                app:cardBackgroundColor="@color/red">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:background="@drawable/stroke_bg">
+
+                    <Spinner
+                        android:id="@+id/spOwnership"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp" />
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/margin_5"
+                android:background="@drawable/stroke_bg">
+
+                <Spinner
+                    android:id="@+id/spStandard"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_50"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/margin_5"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardBackgroundColor="@color/red">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:background="@drawable/stroke_bg">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:hint="Landmark"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:textColorHint="@color/black"
+                        android:textSize="@dimen/_14sdp" />
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_50"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/margin_5"
+                app:cardBackgroundColor="@color/red">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:background="@drawable/stroke_bg">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:hint="Staying Since"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:textColorHint="@color/black"
+                        android:textSize="@dimen/_14sdp" />
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/margin_5"
+                android:background="@drawable/stroke_bg">
+
+                <Spinner
+                    android:id="@+id/spAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_50"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/margin_5"
+                app:cardBackgroundColor="@color/red">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:background="@drawable/stroke_bg">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:hint="Person Contacted"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:textColorHint="@color/black"
+                        android:textSize="@dimen/_14sdp" />
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_50"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/margin_5"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardBackgroundColor="@color/red">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:background="@drawable/stroke_bg">
+
+                    <Spinner
+                        android:id="@+id/spRelationship"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp" />
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/margin_5"
+                android:background="@drawable/stroke_bg">
+
+                <Spinner
+                    android:id="@+id/spAccommodation"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/margin_5"
+                android:background="@drawable/stroke_bg">
+
+                <Spinner
+                    android:id="@+id/spExterior"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/stroke_bg">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="No Of Family Members"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:textSize="@dimen/_14sdp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/stroke_bg">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="Working"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:textSize="@dimen/_14sdp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/stroke_bg">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="Dependent (Adults) Members"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:textSize="@dimen/_14sdp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/stroke_bg">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="Dependent (Children) Members"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:textSize="@dimen/_14sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/stroke_bg">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="Retired / Pensioner member"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:textSize="@dimen/_14sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/margin_5"
+                android:background="@drawable/stroke_bg">
+
+                <Spinner
+                    android:id="@+id/spEarning"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/stroke_bg">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="if Yes Spouse working - Employement Details"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/margin_5"
+                android:background="@drawable/stroke_bg">
+
+                <Spinner
+                    android:id="@+id/spMarital"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/margin_5"
+                android:background="@drawable/stroke_bg">
+
+                <Spinner
+                    android:id="@+id/spEducation"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/stroke_bg">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="Neighbour Name 1"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:textSize="@dimen/_14sdp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/stroke_bg">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="Address 1"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:textSize="@dimen/_14sdp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/stroke_bg">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="Neighbour Name 2"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:textSize="@dimen/_14sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/stroke_bg">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="Address 2"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:textSize="@dimen/_14sdp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/margin_5"
+                android:background="@drawable/stroke_bg">
+
+                <Spinner
+                    android:id="@+id/spNeighbour"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_50"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/margin_5"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardBackgroundColor="@color/red">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:background="@drawable/stroke_bg">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:text="Add Proof Details" />
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/margin_5"
+                android:background="@drawable/stroke_bg">
+
+                <Spinner
+                    android:id="@+id/spVehicle"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/margin_5"
+                android:background="@drawable/stroke_bg">
+
+                <Spinner
+                    android:id="@+id/spPolitical"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_50"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                app:cardBackgroundColor="@color/red">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:background="@drawable/stroke_bg">
+
+                    <Spinner
+                        android:id="@+id/spstatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp" />
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_50"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                app:cardBackgroundColor="@color/red">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:background="@drawable/stroke_bg">
+
+                    <Spinner
+                        android:id="@+id/spreason"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp" />
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/stroke_bg">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="start"
+                    android:hint="Your Comments"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingTop="@dimen/margin_5"
+                    android:textSize="@dimen/_14sdp" />
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:cardBackgroundColor="@color/red"
+                app:cardCornerRadius="@dimen/_10sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload images"
+                        android:padding="@dimen/margin_5"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="@dimen/height_size_60"
+                            app:cardBackgroundColor="@color/gray"
+                            android:layout_margin="@dimen/_10sdp"
+                            app:cardCornerRadius="@dimen/margin_5">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_add"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Signature"
+                                    android:layout_marginTop="@dimen/margin_8"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:textColor="@color/black"/>
+
+
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="@dimen/height_size_60"
+                            app:cardBackgroundColor="@color/gray"
+                            android:layout_margin="@dimen/_10sdp"
+                            app:cardCornerRadius="@dimen/margin_5">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_add"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Applicant"
+                                    android:layout_marginTop="@dimen/margin_8"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:textColor="@color/black"/>
+
+
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="@dimen/height_size_60"
+                            android:layout_margin="@dimen/_10sdp"
+                            app:cardBackgroundColor="@color/gray"
+                            app:cardCornerRadius="@dimen/margin_5">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_add"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Signature"
+                                    android:layout_marginTop="@dimen/margin_8"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:textColor="@color/black"/>
+
+
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:layout_height="@dimen/height_size_60"
+                            app:cardBackgroundColor="@color/gray"
+                            app:cardCornerRadius="@dimen/_10sdp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_add"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Signature"
+                                    android:layout_marginTop="@dimen/margin_8"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:textColor="@color/black"/>
+
+
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonSubmit"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="@dimen/margin_25"
+                android:background="@drawable/button_curved_blue_nopad"
+                android:text="Update Case"
+                android:layout_gravity="center"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

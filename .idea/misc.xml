@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.28243105209397346" />
+        <entry key="../../Library/Android/sdk/platforms/android-31/data/res/layout/simple_spinner_item.xml" value="0.26875" />
+        <entry key="app/src/main/res/drawable-v24/button_curved_blue_nopad.xml" value="0.23796296296296296" />
+        <entry key="app/src/main/res/drawable-v24/button_curved_gray_nopad.xml" value="0.2833333333333333" />
+        <entry key="app/src/main/res/drawable-v24/retry.xml" value="0.1546875" />
+        <entry key="app/src/main/res/drawable-v24/stroke_bg.xml" value="0.23796296296296296" />
+        <entry key="app/src/main/res/drawable/ic_person.xml" value="0.2833333333333333" />
+        <entry key="app/src/main/res/layout/activity_forgot_password.xml" value="0.26875" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.18425925925925926" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.26875" />
+        <entry key="app/src/main/res/layout/activity_main2.xml" value="0.2351851851851852" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.18425925925925926" />
+        <entry key="app/src/main/res/layout/activity_test.xml" value="0.2984384037015616" />
+        <entry key="app/src/main/res/layout/app_bar_main.xml" value="0.2351851851851852" />
+        <entry key="app/src/main/res/layout/content_main.xml" value="0.2351851851851852" />
+        <entry key="app/src/main/res/layout/custom_toast_layout.xml" value="0.18425925925925926" />
+        <entry key="app/src/main/res/layout/dialog_logout.xml" value="0.18425925925925926" />
+        <entry key="app/src/main/res/layout/fragment_gallery.xml" value="0.26875" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.26875" />
+        <entry key="app/src/main/res/layout/fragment_slideshow.xml" value="0.26875" />
+        <entry key="app/src/main/res/layout/loading.xml" value="0.134375" />
+        <entry key="app/src/main/res/layout/nav_header_main.xml" value="0.26875" />
+        <entry key="app/src/main/res/layout/single_row_home.xml" value="0.26875" />
+        <entry key="app/src/main/res/menu/activity_main_drawer.xml" value="0.26875" />
+        <entry key="app/src/main/res/menu/main_activity2.xml" value="0.26875" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

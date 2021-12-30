@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/_10sdp"
+    android:layout_marginVertical="@dimen/margin_5"
+    android:orientation="vertical"
+    app:cardCornerRadius="@dimen/margin_5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvApplicantName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="test"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="test"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvCompany"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="test"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/caseNo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="test"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="test"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvType"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="test"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="normal" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonSubmit"
+                android:layout_width="100dp"
+                android:layout_height="@dimen/margin_25"
+                android:layout_gravity="center"
+                android:background="@drawable/button_curved_blue_nopad"
+                android:text="Update Case"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_15"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnTraced"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/margin_25"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:background="@drawable/button_curved_gray_nopad"
+                android:text="Traced"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnUnTraced"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/margin_25"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:background="@drawable/button_curved_gray_nopad"
+                android:text="UnTraced"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnLocked"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/margin_25"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:background="@drawable/button_curved_gray_nopad"
+                android:text="Locked"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

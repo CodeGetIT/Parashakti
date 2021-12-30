@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:gravity="center_horizontal"
+    android:paddingLeft="10dp"
+    android:paddingTop="5dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="5dp">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/stroke_bg"
+        android:gravity="center"
+        android:paddingLeft="@dimen/margin_20"
+        android:paddingTop="@dimen/margin_5"
+        android:paddingRight="@dimen/margin_20"
+        android:paddingBottom="@dimen/margin_5"
+        android:text="This is a custom toast."
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_size_16"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+</LinearLayout>
